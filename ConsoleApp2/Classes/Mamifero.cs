@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2.Classes
 {
-    public class Mamifero
+    public class Mamifero : Animales
     {
         // Propiedades
-        private String nombreSerVivo;
+        private String nombreMamifero;
 
         // Constructores
         public Mamifero(String nombre)
         {
-            this.nombreSerVivo = nombre;
+            this.nombreMamifero = nombre;
         }
 
         // Métodos
-        public void Respirar()
-        {
-            Console.WriteLine("Soy capaz de respirar");
-        }
-
         public virtual void Pensar()
         {
             Console.WriteLine("Pensamiento básico instintivo");
@@ -33,9 +28,9 @@ namespace ConsoleApp2.Classes
             Console.WriteLine("Cuido de mis crías hasta que se valgan por sí solas");
         }
 
-        public void GetNombre()
+        public override void GetNombre()
         {
-            Console.WriteLine($"El nombre del ser vivo es: {this.nombreSerVivo}.");
+            Console.WriteLine($"El nombre del mamífero es: {this.nombreMamifero}.");
         }
     }
 }
