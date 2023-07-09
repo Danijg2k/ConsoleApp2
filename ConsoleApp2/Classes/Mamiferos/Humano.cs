@@ -12,7 +12,7 @@ namespace ConsoleApp2.Classes.Mamiferos
         public Humano(string nombre) : base(nombre) { }
 
         // Métodos
-        public override void pensar()
+        public override void Pensar()
         {
             Console.WriteLine("Soy capaz de pensar ¿?");
         }

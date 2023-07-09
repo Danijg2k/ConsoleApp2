@@ -12,7 +12,7 @@ namespace ConsoleApp2.Classes.Mamiferos
         public Ballena(string nombre) : base(nombre) { }
 
         // Métodos
-        public void nadar()
+        public void Nadar()
         {
             Console.WriteLine("Soy capaz de nadar");
         }

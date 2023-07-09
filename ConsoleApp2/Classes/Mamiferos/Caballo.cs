@@ -7,20 +7,37 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2.Classes.Mamiferos
 {
-    public class Caballo : Mamifero, IMamiferosTerrestres
+    public class Caballo : Mamifero, IMamiferosTerrestres, IAnimalesYDeportes, ISaltoConPatas
     {
         // Constructores
         public Caballo(string nombre) : base(nombre) { }
 
+
         // Métodos
-        public void galopar()
+        public void Galopar()
         {
             Console.WriteLine("Soy capaz de galopar");
         }
 
-        public int NumeroPatas()
+        int IMamiferosTerrestres.NumeroPatas()
         {
             return 4;
         }
+
+        int ISaltoConPatas.NumeroPatas()
+        {
+            return 2;
+        }
+
+        public string TipoDeporte()
+        {
+            return "Hípica";
+        }
+
+        public bool EsOlimpico()
+        {
+            return true;
+        }
+
     }
 }

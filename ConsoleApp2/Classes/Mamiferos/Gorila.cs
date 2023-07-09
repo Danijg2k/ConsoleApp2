@@ -12,12 +12,12 @@ namespace ConsoleApp2.Classes.Mamiferos
         public Gorila(string nombre) : base(nombre) { }
 
         // Métodos
-        public void trepar()
+        public void Trepar()
         {
             Console.WriteLine("Soy capaz de trepar");
         }
 
-        public override void pensar()
+        public override void Pensar()
         {
             Console.WriteLine("Pensamiento instintivo avanzado");
         }

@@ -18,22 +18,22 @@ namespace ConsoleApp2.Classes
         }
 
         // Métodos
-        public void respirar()
+        public void Respirar()
         {
             Console.WriteLine("Soy capaz de respirar");
         }
 
-        public virtual void pensar()
+        public virtual void Pensar()
         {
             Console.WriteLine("Pensamiento básico instintivo");
         }
 
-        public void cuidarCrias()
+        public void CuidarCrias()
         {
             Console.WriteLine("Cuido de mis crías hasta que se valgan por sí solas");
         }
 
-        public void getNombre()
+        public void GetNombre()
         {
             Console.WriteLine($"El nombre del ser vivo es: {this.nombreSerVivo}.");
         }
