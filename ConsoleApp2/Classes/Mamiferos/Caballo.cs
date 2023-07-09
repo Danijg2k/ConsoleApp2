@@ -12,7 +12,6 @@ namespace ConsoleApp2.Classes.Mamiferos
         // Constructores
         public Caballo(string nombre) : base(nombre) { }
 
-
         // Métodos
         public void Galopar()
         {

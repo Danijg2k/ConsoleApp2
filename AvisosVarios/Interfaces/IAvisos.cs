@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2.Interfaces
+namespace AvisosVarios.Interfaces
 {
-    public interface ISaltoConPatas
+    public interface IAvisos
     {
-        int NumeroPatas();
+        void MostrarAviso();
+        string GetFecha();
     }
 }
